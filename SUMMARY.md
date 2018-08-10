@@ -14,5 +14,6 @@
   * [字符串类型](shu-ju-lei-xing/zi-fu-chuan-lei-xing/README.md)
     * [NSString](shu-ju-lei-xing/zi-fu-chuan-lei-xing/nsstring.md)
     * [NSMutableString](shu-ju-lei-xing/zi-fu-chuan-lei-xing/nsmutablestring.md)
-  * [Untitled](shu-ju-lei-xing/untitled.md)
+  * [NSValue](shu-ju-lei-xing/untitled.md)
+  * [NSNumber](shu-ju-lei-xing/nsnumber.md)
 
