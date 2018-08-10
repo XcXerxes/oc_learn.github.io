@@ -16,4 +16,6 @@
     * [NSMutableString](shu-ju-lei-xing/zi-fu-chuan-lei-xing/nsmutablestring.md)
   * [NSValue](shu-ju-lei-xing/untitled.md)
   * [NSNumber](shu-ju-lei-xing/nsnumber.md)
+  * [NSArray](shu-ju-lei-xing/nsarray.md)
+  * [NSMutableArray](shu-ju-lei-xing/nsmutablearray.md)
 
