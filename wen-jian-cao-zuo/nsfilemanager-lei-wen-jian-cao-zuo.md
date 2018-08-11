@@ -128,3 +128,37 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+文件的属性列表可以在 Foundation/NSFileManager.h 文件中查询，常用的一些属性如下所示。
+
+```objectivec
+NSFileAttributeKey const NSFileType; // 文件类型
+NSFileAttributeKey const NSFileSize; // 文件大小
+NSFileAttributeKey const NSFileCreationDate; // 文件创建日期
+NSFileAttributeKey const NSFileModificationDate; // 文件修改日期
+NSFileAttributeKey const NSFileOwnerAccountName; // 文件所有人
+```
+
+#### 更改文件属性
+
+使用 setAttributes:ofItemAtPath:error 方法来设置文件属性，在调用该方法之前，需要把希望修改的属性，封装在一个字典里。
+
+```objectivec
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        //目录路径Path：绝对路径
+        NSString *directoryPath = @"/Users/shixin/Desktop";
+        //文件路径
+        NSString *filePath = [directoryPath stringByAppendingPathComponent:@"myfile.txt"];
+        //实例化NSFileManager对象
+        NSFileManager *fm = [NSFileManager defaultManager];
+        //更改文件属性
+        NSDictionary *attrDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate distantFuture], NSFileCreationDate, nil];
+        [fm setAttributes:attrDict ofItemAtPath:filePath error:nil];
+        NSDictionary *fileAttr1 = [fm attributesOfItemAtPath:filePath error:nil];
+        NSLog(@"file create date：<%@>", fileAttr1[NSFileCreationDate]);
+    }
+    return 0;
+}
+
+```
+
