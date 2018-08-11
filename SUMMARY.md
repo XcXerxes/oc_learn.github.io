@@ -21,4 +21,6 @@
   * [NSDictionary](shu-ju-lei-xing/nsdictionary.md)
   * [NSMutableDictionary](shu-ju-lei-xing/nsmutabledictionary.md)
   * [NSDate](shu-ju-lei-xing/nsdate.md)
+* [文件操作](wen-jian-cao-zuo/README.md)
+  * [NSFileManager类：文件操作](wen-jian-cao-zuo/nsfilemanager-lei-wen-jian-cao-zuo.md)
 
